@@ -5,6 +5,9 @@ Instead of solving 1000 random questions, you'll learn how to **think in pattern
 
 ---
 
+## 🚀 Babua DSA Patterns Sheet 2025
+[Babua Sheet](https://docs.google.com/spreadsheets/d/1T3vPcwlWdMRMYSf8IxQCKb3gX7rGzDss-ZU-R4XFM14/edit?usp=sharing)
+
 ## 📘 About the Course
 
 **Duration:** 90 Days  
