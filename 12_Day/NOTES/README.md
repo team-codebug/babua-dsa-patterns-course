@@ -1,0 +1,1 @@
+# Sliding Window Pattern Notes
