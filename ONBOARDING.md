@@ -12,7 +12,7 @@ This sheet is designed to help onboard new learners into the course.
 * **Instructor:** [Anuj Kumar](https://www.linkedin.com/in/anuj-kumar-9a188968/)
 * **YouTube Channel:** [CTO Bhaiya](https://www.youtube.com/channel/UCrJ9A_U_e4-p5ZdDOjsa1KA)
 * **Duration:** 1–2 Days
-* **Goal:** Master basic DSA Topics
+* **Goal:** Master basic DSA Topic
 
 ---
 
