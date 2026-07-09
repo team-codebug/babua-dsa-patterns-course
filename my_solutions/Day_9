@@ -1,0 +1,85 @@
+#Split a Linked List into two halves
+
+class Solution {
+    public Pair<Node, Node> splitList(Node head) {
+        // Code here
+        Node slow = head, fast = head.next;
+        
+        while(fast != head && fast.next != head)
+        {
+            slow = slow.next;
+            fast = fast.next;
+            
+            if(fast.next != head)
+            fast = fast.next;
+        }
+        fast.next = slow.next;
+        slow.next = head;
+        
+        return new Pair<>(head, fast.next);
+    }
+}
+
+#2 Find the Duplicate Number(LC 287)
+
+class Solution {
+    public int findDuplicate(int[] arr) {
+        int i = 0;
+        while(i < arr.length){
+            int corrIdx = arr[i] - 1;
+            if(arr[i] != arr[corrIdx]){
+                int temp =arr[i];
+                arr[i] = arr[corrIdx];
+                arr[corrIdx] = temp;
+            }
+            else i++;
+        }
+        
+        for(i = 0 ; i < arr.length ; i++){
+            if( i != arr[i] - 1)
+            return arr[i];
+        }
+
+        return -1;
+    }
+}
+
+#3 Palindrome Linked List
+
+
+class Solution {
+    public boolean isPalindrome(Node head) {
+        // code here
+       // find middle node of ll
+       Node slow = head;
+       Node fast = head;
+       while(fast != null && fast.next != null){
+           slow = slow.next;
+           fast = fast.next.next;
+       }
+       Node midNode = slow;
+       //reverse second half of ll
+       Node curr = midNode;
+       Node prev = null;
+       Node next;
+       while(curr != null){
+           next = curr.next;
+           curr.next = prev;
+           prev = curr;
+           curr = next;
+       }
+       
+       Node left = head;
+       Node right = prev;
+       while(right != null){
+           if(left.data != right.data)
+           return false;
+           
+           left = left.next;
+           right = right.next;
+       }
+       return true;
+    }
+}
+
+✅✅✅

@@ -1,0 +1,75 @@
+#1 Strobogrammatic Number
+
+import java.util.HashMap;
+
+public class strobogrammatic_number {
+    public static boolean checkisStrobogrammatic(String s, HashMap<Character, Character> map){
+
+        int i=0, j=s.length()-1;
+
+        while(i<=j){ //TC : O(N)
+            char l = s.charAt(i);
+            char r = s.charAt(j);
+            
+            if(!map.containsKey(l))
+                return false;
+            else{
+                if(map.get(l) != r)
+                    return false;
+                else{
+                    i++;
+                    j--;
+                }
+            }
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+        String s = "12881";
+        HashMap<Character, Character> map = new HashMap<>();
+
+        map.put('0','0');
+        map.put('1','1');
+        map.put('8','8');
+        map.put('6','9');
+        map.put('9','6');
+
+        boolean ans = checkisStrobogrammatic(s, map);
+        System.out.println(ans);
+    }
+
+#2 Append Characters to String to Make Subsequence(LC 2486)
+
+class Solution {
+    public int appendCharacters(String s, String t) {
+        int i = 0, j = 0;
+
+        while(i < s.length() && j < t.length()){ //TC -> O(N)
+            char sChar = s.charAt(i);
+            char tChar = t.charAt(j);
+
+            if(sChar != tChar) i++;
+            else{
+                i++;
+                j++;
+            }
+        }
+        return (j < t.length()) ? t.length() - j : 0;
+    }
+}
+
+#3 Lowest Common Ancestor of a Binary Tree III(NeetCode, LC premium)
+class Solution {
+    public Node lowestCommonAncestor(Node p, Node q) {
+        Node p1 = p, 
+            q1 = q;
+
+        while(p1 != q1){
+            p1 = (p1==null)? q : p1.parent;
+            q1 = (q1==null)? p : q1.parent;
+        }
+        return p1;
+    }
+}
+
+}

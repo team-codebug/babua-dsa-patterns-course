@@ -1,0 +1,60 @@
+✅1 Sort Colors (LC 75)
+
+class Solution {
+    public void sortColors(int[] nums) {
+        //Dutch National Flag Algorithm
+        //TC -> O(n), SC -> O(1)
+        int i = 0, j = nums.length - 1, k = 0;
+        while(k <= j){
+            if(nums[k] == 1) k++;
+            
+            else if(nums[k] == 2){
+                int temp = nums[k];
+                nums[k] = nums[j];
+                nums[j] = temp;
+
+                j--;
+            }
+            else{
+                int temp = nums[i];
+                nums[i] = nums[k];
+                nums[k] = temp;
+
+                k++; i++;
+            }
+        }
+    }
+}
+
+✅2 Remove Nth Node From End of List(LC 19)
+
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+
+        ListNode temp = head;
+        int size = 0;
+        while(temp != null){
+            temp = temp.next;
+            size++;
+        }
+
+        if(size == n)
+        return head.next;
+
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+
+        ListNode prev = dummy;
+        ListNode curr = head;
+
+        int prevIdx = 1;
+
+        while(prevIdx <= size - n){
+            curr = curr.next;
+            prev = prev.next;
+            prevIdx++;
+        }
+        prev.next = prev.next.next;
+        return dummy.next;
+    }
+}

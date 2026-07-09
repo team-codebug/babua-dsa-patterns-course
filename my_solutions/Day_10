@@ -1,0 +1,40 @@
+#LC 2130: Maximum Twin Sum of a Linked List
+(similar to palindrome LL)
+
+
+class Solution {
+    public ListNode findMid(ListNode head){
+        ListNode slow = head;
+        ListNode fast = head;
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+    public int pairSum(ListNode head) {
+
+        ListNode midNode = findMid(head);
+
+        ListNode curr = midNode;
+        ListNode prev = null;
+        ListNode next;
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        ListNode right = prev;
+        ListNode left = head;
+        int maxSum = Integer.MIN_VALUE;
+        int sum = 0;
+        while(right != null){
+            sum = left.val + right.val;
+            maxSum = Math.max(sum, maxSum);
+            left = left.next;
+            right = right.next;
+        }
+        return maxSum;
+    }
+}

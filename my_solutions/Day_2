@@ -1,0 +1,171 @@
+# 📝 Solutions
+
+#1️ Palindrome String  
+Problem: Check if a given string is a valid palindrome considering only alphanumeric characters and ignoring cases.
+
+# ✅ Solution
+
+class Solution {
+    public boolean isPalindrome(String s) {
+        
+        int i = 0;
+        int j = s.length() - 1;
+
+        s = s.toLowerCase();
+
+        while(i < j)
+        {
+            char ch_i = s.charAt(i);
+            char ch_j = s.charAt(j);
+
+            if(!Character.isLetterOrDigit(ch_i)){
+                i++;
+                continue;
+            }
+            
+            if(!Character.isLetterOrDigit(ch_j)){
+                j--;
+                continue;
+            }
+
+            if(ch_i != ch_j)
+                return false;
+             
+            i++;
+            j--;
+        }
+        return true;
+    }
+}
+
+#️2 Reverse String
+Problem: Reverse the characters of a character array in-place.
+
+# ✅ Solution
+
+class Solution {
+    public void reverseString(char[] s) {
+        int i = 0;
+        int j = s.length - 1;
+
+        while(i < j){
+            
+            char temp = s[i];
+            s[i] = s[j];
+            s[j] = temp;
+
+            i++;
+            j--;
+        }
+    }
+}
+
+
+#️3 Sorted Squares 
+Problem:Given a sorted array, return the array of squares of each number, sorted non-decreasing.
+
+# ✅ Solution
+
+class Solution {
+    public int[] sortedSquares(int[] nums) {
+        
+        int i = 0;
+        int j = nums.length - 1;
+
+        int[] ans = new int[nums.length];
+        int idx = nums.length - 1;
+
+        while(i <= j){
+
+            if(Math.abs(nums[i]) > Math.abs(nums[j])){
+                ans[idx--] = nums[i] * nums[i];
+                i++;
+            }
+            else{ // equal case handled automatically
+                ans[idx--] = nums[j] * nums[j];
+                j--;
+            }
+        }
+        return ans;
+    }
+}
+
+#️4 Valid Palindrome II
+Problem:Given a string s, return true if the s can be palindrome after deleting at most one character from it.
+
+# ✅ Solution
+class Solution {
+    public boolean helper(int i, int j, String s){
+        
+        while(i < j){
+            if(s.charAt(i) != s.charAt(j))
+            return false;
+
+            i++;
+            j--;
+        }
+        return true;
+
+    }
+    public boolean validPalindrome(String s) {
+        
+        int i = 0 ;
+        int j = s.length() - 1;
+
+        while(i < j){
+            
+            char left = s.charAt(i);
+            char right = s.charAt(j);
+
+            if(left != right){
+                return helper(i + 1, j, s) || helper(i, j - 1, s);
+            }
+
+            i++;
+            j--;
+        }
+        return true;
+    }
+}
+
+#️5 Valid Word Abbreviation(NeetCode)
+
+class Solution {
+    public boolean validWordAbbreviation(String word, String abbr) {
+        int i = 0, j = 0;
+        int n = word.length(), m = abbr.length();
+
+        while(i < n && j < m){
+
+            char abbr_chr = abbr.charAt(j);
+
+            // Case 1: Letter → must match
+            if(Character.isLetter(abbr_chr)){
+                if(word.charAt(i) != abbr_chr)
+                    return false;
+
+                i++;
+                j++;
+            }
+            else {
+                // Leading zero not allowed
+                if(abbr_chr == '0') return false;
+
+                int dig = 0;
+
+                 
+                while(j < m && Character.isDigit(abbr.charAt(j))){
+                    dig = dig * 10 + (abbr.charAt(j) - '0');
+                    j++;
+                }
+
+                
+                i += dig;
+            }
+        }
+
+        return i == n && j == m;
+    }
+}
+
+
