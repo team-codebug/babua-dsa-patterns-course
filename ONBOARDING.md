@@ -20,8 +20,8 @@ This sheet is designed to help onboard new learners into the course.
 
 | Day | Topic / Pattern                                        | Video Link                                                                                                     | ✅ Done |
 | --- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | ------ |
-| 1   | 485.1 Max Consecutive Ones (Theory)                    | [🎥 Watch Video](https://www.youtube.com/watch?v=4UbULlkevGs&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u)          | ☐      |
-| 2   | 485.2 Max Consecutive Ones (Code)                      | [🎥 Watch Video](https://www.youtube.com/watch?v=2hzERLjR2_k&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u&index=2)  | ☐      |
+| 1   | 485.1 Max Consecutive Ones (Theory)                    | [🎥 Watch Video](https://www.youtube.com/watch?v=4UbULlkevGs&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u)          |  ✅      |
+| 2   | 485.2 Max Consecutive Ones (Code)                      | [🎥 Watch Video](https://www.youtube.com/watch?v=2hzERLjR2_k&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u&index=2)  |  ✅     |
 | 3   | 1295.1 Find Number with Even Number of Digits (Theory) | [🎥 Watch Video](https://www.youtube.com/watch?v=c3XuLlIQ_fw&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u&index=3)  | ☐      |
 | 4   | 1295.2 Find Number with Even Number of Digits (Code)   | [🎥 Watch Video](https://www.youtube.com/watch?v=fGowSrWq5QI&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u&index=4)  | ☐      |
 | 5   | 724.1 Find Pivot Index (Theory)                        | [🎥 Watch Video](https://www.youtube.com/watch?v=IV3AkceP37A&list=PLVItHqpXY_DD8Vyz2eC-yem_Mbu4Peuin)          | ☐      |
