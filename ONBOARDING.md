@@ -20,14 +20,14 @@ This sheet is designed to help onboard new learners into the course.
 
 | Day | Topic / Pattern                                        | Video Link                                                                                                     | ✅ Done |
 | --- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | ------ |
-| 1   | 485.1 Max Consecutive Ones (Theory)                    | [🎥 Watch Video](https://www.youtube.com/watch?v=4UbULlkevGs&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u)          | ☐      |
-| 2   | 485.2 Max Consecutive Ones (Code)                      | [🎥 Watch Video](https://www.youtube.com/watch?v=2hzERLjR2_k&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u&index=2)  | ☐      |
-| 3   | 1295.1 Find Number with Even Number of Digits (Theory) | [🎥 Watch Video](https://www.youtube.com/watch?v=c3XuLlIQ_fw&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u&index=3)  | ☐      |
-| 4   | 1295.2 Find Number with Even Number of Digits (Code)   | [🎥 Watch Video](https://www.youtube.com/watch?v=fGowSrWq5QI&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u&index=4)  | ☐      |
-| 5   | 724.1 Find Pivot Index (Theory)                        | [🎥 Watch Video](https://www.youtube.com/watch?v=IV3AkceP37A&list=PLVItHqpXY_DD8Vyz2eC-yem_Mbu4Peuin)          | ☐      |
-| 6   | 724.2 Find Pivot Index (Code)                          | [🎥 Watch Video](https://www.youtube.com/watch?v=59gnJCkDzEc&list=PLVItHqpXY_DD8Vyz2eC-yem_Mbu4Peuin&index=2)  | ☐      |
-| 7   | 118.1 Pascal's Triangle (Theory)                       | [🎥 Watch Video](https://www.youtube.com/watch?v=p6l9kw5Pv1I&list=PLVItHqpXY_DD8Vyz2eC-yem_Mbu4Peuin&index=7)  | ☐      |
-| 8   | 118.2 Pascal's Triangle (Code)                         | [🎥 Watch Video](https://www.youtube.com/watch?v=ELo7RR-Isjk&list=PLVItHqpXY_DD8Vyz2eC-yem_Mbu4Peuin&index=8)  | ☐      |
+| 1   | 485.1 Max Consecutive Ones (Theory)                    | [🎥 Watch Video](https://www.youtube.com/watch?v=4UbULlkevGs&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u)          | ✅      |
+| 2   | 485.2 Max Consecutive Ones (Code)                      | [🎥 Watch Video](https://www.youtube.com/watch?v=2hzERLjR2_k&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u&index=2)  | ✅      |
+| 3   | 1295.1 Find Number with Even Number of Digits (Theory) | [🎥 Watch Video](https://www.youtube.com/watch?v=c3XuLlIQ_fw&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u&index=3)  | ✅      |
+| 4   | 1295.2 Find Number with Even Number of Digits (Code)   | [🎥 Watch Video](https://www.youtube.com/watch?v=fGowSrWq5QI&list=PLVItHqpXY_DB7iHw9Qc5CgCOrlkdDpy_u&index=4)  | ✅      |
+| 5   | 724.1 Find Pivot Index (Theory)                        | [🎥 Watch Video](https://www.youtube.com/watch?v=IV3AkceP37A&list=PLVItHqpXY_DD8Vyz2eC-yem_Mbu4Peuin)          | ✅      |
+| 6   | 724.2 Find Pivot Index (Code)                          | [🎥 Watch Video](https://www.youtube.com/watch?v=59gnJCkDzEc&list=PLVItHqpXY_DD8Vyz2eC-yem_Mbu4Peuin&index=2)  | ✅      |
+| 7   | 118.1 Pascal's Triangle (Theory)                       | [🎥 Watch Video](https://www.youtube.com/watch?v=p6l9kw5Pv1I&list=PLVItHqpXY_DD8Vyz2eC-yem_Mbu4Peuin&index=7)  | ✅      |
+| 8   | 118.2 Pascal's Triangle (Code)                         | [🎥 Watch Video](https://www.youtube.com/watch?v=ELo7RR-Isjk&list=PLVItHqpXY_DD8Vyz2eC-yem_Mbu4Peuin&index=8)  | ✅      |
 | 9   | 344.1 Reverse String (Theory)                          | [🎥 Watch Video](https://www.youtube.com/watch?v=SfE6EOTy3As&list=PLVItHqpXY_DD8Vyz2eC-yem_Mbu4Peuin&index=9)  | ☐      |
 | 10  | 344.2 Reverse String (Code)                            | [🎥 Watch Video](https://www.youtube.com/watch?v=0uJjOlNOrQ0&list=PLVItHqpXY_DD8Vyz2eC-yem_Mbu4Peuin&index=10) | ☐      |
 | 11  | 0. Linked List Introduction                            | [🎥 Watch Video](https://www.youtube.com/watch?v=tbrVeBu0_NY&list=PLVItHqpXY_DC3UTWNaskA1Q-1Gv-uAAb0)          | ☐      |
